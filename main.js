@@ -692,9 +692,12 @@ function initSite() {
   const clockEl = document.getElementById('os-clock');
   function tickClock() {
     const d = new Date();
-    clockEl.textContent =
+    // date is split out so narrow screens can drop it and keep just the time
+    clockEl.innerHTML =
+      '<span class="clk-date">' +
       d.toLocaleDateString([], { weekday: 'short', day: '2-digit', month: 'short' }) +
-      '  ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      '</span>' +
+      d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   }
   tickClock();
   setInterval(tickClock, 15000);
