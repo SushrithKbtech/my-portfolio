@@ -204,15 +204,15 @@ a { color: inherit; text-decoration: none; }
   stroke-linejoin: round;
 }
 .glyph-fill { fill: #e8ecf5; stroke: none; }
-.da-about  { background: linear-gradient(145deg, #46648f, #2a3c5c); }
-.da-skills { background: linear-gradient(145deg, #6b5fae, #413a6e); }
-.da-quests { background: linear-gradient(145deg, #3e7d7d, #274d4d); }
-.da-troph  { background: linear-gradient(145deg, #a3823f, #6b5426); }
-.da-edu    { background: linear-gradient(145deg, #4a7ab5, #2d4a73); }
-.da-certs  { background: linear-gradient(145deg, #8a6a9e, #574064); }
-.da-mail   { background: linear-gradient(145deg, #3f87a8, #265468); }
-.da-resume { background: linear-gradient(145deg, #5c6878, #39414d); }
-.da-github { background: linear-gradient(145deg, #30363d, #16191d); }
+.da-about  { background: linear-gradient(145deg, #a78bfa, #7c3aed); }
+.da-skills { background: linear-gradient(145deg, #fbbf24, #d97706); }
+.da-quests { background: linear-gradient(145deg, #34d399, #059669); }
+.da-troph  { background: linear-gradient(145deg, #fcd34d, #b45309); }
+.da-edu    { background: linear-gradient(145deg, #60a5fa, #2563eb); }
+.da-certs  { background: linear-gradient(145deg, #f472b6, #db2777); }
+.da-mail   { background: linear-gradient(145deg, #22d3ee, #0891b2); }
+.da-resume { background: linear-gradient(145deg, #fb923c, #ea580c); }
+.da-github { background: linear-gradient(145deg, #374151, #111827); }
 .dock-app.active i { opacity: 1; }
 .dock-app::after {
   content: attr(data-tip);
