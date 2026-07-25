@@ -171,7 +171,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  transition: transform 0.18s ease;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
 }
 .dock-app::before {
   content: "";
@@ -205,14 +205,18 @@ a { color: inherit; text-decoration: none; }
 }
 .glyph-fill { fill: #e8ecf5; stroke: none; }
 .da-about  { background: linear-gradient(145deg, #a78bfa, #7c3aed); }
-.da-skills { background: linear-gradient(145deg, #fbbf24, #d97706); }
-.da-quests { background: linear-gradient(145deg, #34d399, #059669); }
-.da-troph  { background: linear-gradient(145deg, #fcd34d, #b45309); }
-.da-edu    { background: linear-gradient(145deg, #60a5fa, #2563eb); }
-.da-certs  { background: linear-gradient(145deg, #f472b6, #db2777); }
-.da-mail   { background: linear-gradient(145deg, #22d3ee, #0891b2); }
-.da-resume { background: linear-gradient(145deg, #fb923c, #ea580c); }
-.da-github { background: linear-gradient(145deg, #374151, #111827); }
+.da-skills { background: linear-gradient(145deg, #facc15, #ca8a04); } /* yellow */
+.da-quests { background: linear-gradient(145deg, #34d399, #059669); } /* emerald */
+.da-troph  { background: linear-gradient(145deg, #fb923c, #ea580c); } /* orange */
+.da-edu    { background: linear-gradient(145deg, #60a5fa, #2563eb); } /* blue */
+.da-certs  { background: linear-gradient(145deg, #e879f9, #c026d3); } /* fuchsia */
+.da-mail   { background: linear-gradient(145deg, #2dd4bf, #0d9488); } /* teal */
+.da-resume { background: linear-gradient(145deg, #f87171, #dc2626); } /* red */
+.da-github { background: linear-gradient(145deg, #374151, #111827); } /* graphite */
+.da-whatsapp { background: linear-gradient(145deg, #25d366, #128c7e); } /* whatsapp green */
+/* the app for the section you're currently in lifts out of the dock */
+.dock-app.active { transform: translateY(-12px) scale(1.12); box-shadow: 0 14px 26px rgba(0, 0, 0, 0.5); }
+.dock-app.active:hover { transform: translateY(-15px) scale(1.18); }
 .dock-app.active i { opacity: 1; }
 .dock-app::after {
   content: attr(data-tip);

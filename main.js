@@ -545,7 +545,7 @@ function initSite() {
   }
   if (!prefersReduced) {
     gsap.utils.toArray('.window').forEach(win => {
-      gsap.set(win, { opacity: 0, scale: 0.72, y: 80, transformOrigin: '50% 90%' });
+      gsap.set(win, { opacity: 0, scale: 0.88, y: 60, transformOrigin: '50% 12%' });
       ScrollTrigger.create({
         trigger: win,
         start: 'top 85%',
